@@ -59,19 +59,3 @@ function myFunction() {
   }
 }
 
-
-
-const secondBody = document.querySelectorAll("#productList")[0];  //finding using CSS selector
-console.log(secondBody)
-secondBody.addEventListener("click", getFunction);
-
-function getFunction(event){
-  if(event.target.id =="addToCart"){
-    console.log("addToCart")
-
-    console.log(event.target.parentElement.parentElement.childNodes[2].nextElementSibling.outerText)
-    }
-
-  
-}
-
